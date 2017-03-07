@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+            var canvas;
+            var context;
+var image;
+            window.onload = init;
+            function init() {
+                canvas = document.getElementById("canvas");
+                context = canvas.getContext("2d");
+
+		image = new Image();
+		image.src = './img/pro.jpg';
+                setInterval(gameLoop, 30);
+                                        document.getElementById('audio').play();
+                                        document.getElementById('audio').loop = true;
+            }
+
+            function gameLoop() {
+                var x = Math.random() * 500;
+                var y = Math.random() * 500;
+
+                context.beginPath();
+                context.arc(x, y, 5, 0, Math.PI * 2, true);
+context.fill();
+context.drawImage(image,x,y,200,100);
+               }
+</script>
+</head>
+<body>
+<canvas id="canvas" width="800" height="800"></canvas>
+        <audio id="audio" src="./img/LeeJeongHyeon.mp3">
+        </audio>
+</body>
+</html>

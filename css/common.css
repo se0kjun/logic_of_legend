@@ -1,0 +1,34 @@
+body {
+	background:green;
+	text-align:center;
+	margin:auto;
+	margin-top:30px;
+	}
+
+#wrapper {
+	text-align : center;
+	margin-top:30px;
+	//display:none;
+}
+
+#items {
+	overflow: hidden;
+	position: relative;
+	width: 450px;
+	height: 85px;
+	display:inline-block;
+}
+
+#ZERO, #ONE {
+	margin-bottom: 30px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+#left_button {
+	margin-bottom: 20px;
+}
+
+#right_button {
+	margin-bottom: 20px;
+}
